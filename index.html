@@ -2,76 +2,216 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skylene | Elevate Your Web Presence</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laundry Services by skylene</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
-  <header class="navbar">
-    <nav class="container">
-      <h1 class="logo">Skylene</h1>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+  <header>
+    <div class="container">
+      <div class="logo">Skylene</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="username">Username</a>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-content">
-        <h2>Elevate Your Web Presence with Skylene</h2>
-        <p>We design experiences that make your brand shine on the internet.</p>
-        <a href="https://ind-tech-skylene.vercel.app/"><button onclick="showAlert()">Start a Project</button></a>
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Revitalize Your Clothes with Expert<br>Laundry Services!</h1>
+          <p>From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and
+            rediscover the freshness of your clothes today!</p>
+          <a href="#services" class="btn">Book a service today!</a>
+        </div>
+        <div class="hero-image">
+          <img src="./images/laundary.webp" alt="3D laundry machine">
+        </div>
       </div>
     </section>
 
-    <section id="services" class="services">
-      <h2>What We Do</h2>
-      <div class="service-list">
-        <article class="service">
-          <h3>Custom Websites</h3>
-          <p>Clean, responsive and crafted to convert visitors into clients.</p>
-        </article>
-        <article class="service">
-          <h3>Brand Identity</h3>
-          <p>From logo to fonts — we build your digital personality.</p>
-        </article>
-        <article class="service">
-          <h3>Marketing & SEO</h3>
-          <p>Data-driven growth strategies to rank and convert better.</p>
-        </article>
+    <section class="achievements-section">
+      <div class="container">
+        <h2 class="section-title">Our Achievements</h2>
+        <div class="achievements-grid">
+          <div class="achievement-item">
+            <span class="number">15+</span>
+            <span class="text">Laundry Services</span>
+          </div>
+          <div class="achievement-item">
+            <span class="number">240+</span>
+            <span class="text">Happy Customers</span>
+          </div>
+          <div class="achievement-item">
+            <span class="number">2+ Yrs</span>
+            <span class="text">Experience</span>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="about" class="about">
-      <h2>About Skylene</h2>
-      <p>
-        Skylene is a creative digital studio transforming ideas into impactful
-        web solutions. We care about innovation and pixel-perfect design.
-      </p>
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="services-content">
+          <h2 class="section-title">Our Services</h2>
+          <p>Click On The Add to Cart Button To Add The Services To Your Cart</p>
+          <div class="service-list">
+            <div class="service-item" data-service-id="1" data-service-name="Dry Cleaning" data-price="200.00">
+              <span>Dry Cleaning</span>
+              <span class="price">₹200.00</span>
+              <button class="add-btn">Add item ⊕</button>
+            </div>
+            <div class="service-item" data-service-id="2" data-service-name="Wash & Fold" data-price="100.00">
+              <span>Wash & Fold</span>
+              <span class="price">₹100.00</span>
+              <button class="add-btn">Add item ⊕</button>
+            </div>
+            <div class="service-item" data-service-id="3" data-service-name="Ironing" data-price="30.00">
+              <span>Ironing</span>
+              <span class="price">₹30.00</span>
+              <button class="add-btn">Add item ⊕</button>
+            </div>
+            <div class="service-item" data-service-id="4" data-service-name="Stain Removal" data-price="500.00">
+              <span>Stain Removal</span>
+              <span class="price">₹500.00</span>
+              <button class="add-btn">Add item ⊕</button>
+            </div>
+            <div class="service-item" data-service-id="5" data-service-name="Leather & Suede Cleaning"
+              data-price="999.00">
+              <span>Leather & Suede Cleaning</span>
+              <span class="price">₹999.00</span>
+              <button class="add-btn">Add item ⊕</button>
+            </div>
+            <div class="service-item" data-service-id="6" data-service-name="Wedding Dress Cleaning"
+              data-price="2800.00">
+              <span>Wedding Dress Cleaning</span>
+              <span class="price">₹2800.00</span>
+              <button class="add-btn">Add item ⊕</button>
+            </div>
+          </div>
+          <p class="cart-message">Add the items to the cart and book now</p>
+        </div>
+        <div class="cart-content">
+          <h2 class="section-title">Added Items</h2>
+          <div class="cart-list">
+            <div class="cart-header">
+              <span class="sno-header">S.No</span>
+              <span class="service-name-header">Service Name</span>
+              <span class="price-header">Price</span>
+            </div>
+            <div id="cart-items">
+              <div class="no-items">
+                <span class="no-items-icon">ⓘ</span>
+                <span class="no-items-text">No Items Added</span>
+                <p>Add items to the cart from the services bar</p>
+              </div>
+            </div>
+          </div>
+          <div class="cart-total">
+            <span>Total Amount</span>
+            <span id="total-amount">₹0</span>
+          </div>
+          <div class="booking-form">
+            <h3 class="book-now-title">Book Now</h3>
+            <form id="booking-form">
+              <input type="text" id="full-name" placeholder="Full Name" required>
+              <div class="contact-details">
+                <input type="email" id="email" placeholder="Email ID" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+              </div>
+              <button type="submit" class="btn book-now-btn">Book now</button>
+            </form>
+          </div>
+          <p id="booking-message"></p>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="contact">
-      <h2>Let’s Talk</h2>
-      <form>
-        <input type="text" placeholder="Your Name" id="name" required />
-        <input type="email" placeholder="Your Email" id="email" required />
-        <textarea rows="4" placeholder="Your Message" id="msg" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+    <section class="features-section">
+      <div class="container">
+        <div class="feature-item">
+          <img src="./images/premium.webp" alt="Premium Services Icon">
+          <h3>Premium Services</h3>
+          <p>Devote your wardrobe with our meticulous dry cleaning, ensuring garments look and feel as good as new.</p>
+        </div>
+        <div class="feature-item">
+          <img src="./images/quicksupport.webp" alt="Quick Support Icon">
+          <h3>Quick Support</h3>
+          <p>We're committed to providing prompt solutions to ensure your experience is smooth and worry-free.</p>
+        </div>
+        <div class="feature-item">
+          <img src="./images/free.webp" alt="Hassle Free Delivery Icon">
+          <h3>Hassle Free Delivery</h3>
+          <p>Enjoy seamless service with our convenient pickup and delivery options, tailored to your schedule.</p>
+        </div>
+        <div class="feature-item">
+          <img src="./images/low-price-shopping.webp" alt="Affordable Prices Icon">
+          <h3>Affordable Prices</h3>
+          <p>Experience exceptional care without breaking the bank - our affordable prices make laundry day stress-free.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Subscribe to our newsletter.</h2>
+          <div class="newsletter-form">
+            <input type="text" placeholder="Full name">
+            <input type="email" placeholder="Email">
+            <button class="btn subscribe-btn">Subscribe</button>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <p>&copy; 2025 Skylene. Crafted with 💙 for the web.</p>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo-section">
+          <div class="logo">Skylene</div>
+          <p>Keep your clothes fresh and clean with our reliable laundry solutions.</p>
+        </div>
+        <div class="footer-links-section">
+          <h3>Important Links</h3>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-section">
+          <h3>Contact</h3>
+          <ul>
+            <li><a href="mailto:amitkumar9304730@gmail.com">amitkumar9304730@gmail.com</a></li>
+            <li><a href="tel:+919508260355">+91 9508260355</a></li>
+          </ul>
+        </div>
+        <div class="footer-social-section">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="#"><img src="https://imgs.search.brave.com/anFzZubCmVpSfFS5OeNvO3Ao_M5rz5PLcJF2wCLBRUM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2IyLzg0/LzAxL2IyODQwMWUx/ZWQ1NWUxZDk2MzU2/YTRiMGY0MTAxYWM0/LmpwZw" alt="Facebook"></a>
+            <a href="#"><img src="https://imgs.search.brave.com/jzjig1cJJ8ad1wdjUGeRIoIfYQZJ7_EDznTW7mJtq04/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2MxLzQ0/L2YyL2MxNDRmMjgw/YWNlOWM0MGQyNDQ4/ZGZlOTNmYzRkZjFk/LmpwZw" alt="Instagram"></a>
+            <a href="#"><img src="https://imgs.search.brave.com/QzBLDxmsXO_vw85iHduSTCmpir850xRsHCZPAQF3JlU/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2ExL2Ux/L2FmL2ExZTFhZmQ5/MTVlMmFkMGI1YTFm/ZDIxZDY2MGU5NDg4/LmpwZw" alt="Twitter"></a>
+            <a href="#"><img src="https://imgs.search.brave.com/gATTfbARx_IFaaXFX8OLwwCVmrl7Q2uQxjpGpFydIgM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/Y2l0eXBuZy5jb20v/cHVibGljL3VwbG9h/ZHMvcHJldmlldy9o/ZC1yZWQtcm91bmQt/c2hhcGUtY29udGFp/bnMtd2hpdGUtbmVv/bi15b3V0dWJlLXNp/Z24tc3ltYm9sLXBu/Zy03MDE3NTE2OTUx/MjAzMzBhYno5YnRz/YnZ1LnBuZz92PTIw/MjUwNTI3MDg" alt="YouTube"></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 
 </html>
